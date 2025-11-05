@@ -12,7 +12,7 @@ export const createSentence = async (req, res) => {
     const { sentence, note, sourceId, sourceTitle } = req.body;
     
     // 2. Get the ownerId from the authenticated user
-    const ownerId = req.user.id;
+    const ownerId = req.userId;
 
     // 3. Basic validation
     if (!sentence || !sourceId || !sourceTitle) {
@@ -51,7 +51,7 @@ export const createSentence = async (req, res) => {
 export const getAllSentences = async (req, res) => {
   try {
     // 1. Get ownerId from the authenticated user
-    const ownerId = req.user.id;
+    const ownerId = req.userId;
 
     // 2. Check for query parameters
     const { sourceId } = req.query;
@@ -86,7 +86,7 @@ export const getAllSentences = async (req, res) => {
 export const getSentenceById = async (req, res) => {
   try {
     const { sentenceId } = req.params;
-    const ownerId = req.user.id;
+    const ownerId = req.userId;
 
     // 1. Check for valid ID
     if (!mongoose.Types.ObjectId.isValid(sentenceId)) {
@@ -120,7 +120,7 @@ export const getSentenceById = async (req, res) => {
 export const updateSentence = async (req, res) => {
   try {
     const { sentenceId } = req.params;
-    const ownerId = req.user.id;
+    const ownerId = req.userId;
     
     // 1. Check for valid ID
     if (!mongoose.Types.ObjectId.isValid(sentenceId)) {
@@ -165,7 +165,7 @@ export const updateSentence = async (req, res) => {
 export const deleteSentence = async (req, res) => {
   try {
     const { sentenceId } = req.params;
-    const ownerId = req.user.id;
+    const ownerId = req.userId;
 
     // 1. Check for valid ID
     if (!mongoose.Types.ObjectId.isValid(sentenceId)) {

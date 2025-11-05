@@ -13,7 +13,7 @@ export const createVocabulary = async (req, res) => {
     const { word, note, description, sourceId, sourceTitle } = req.body;
     
     // 2. Get the ownerId from the authenticated user (attached by auth middleware)
-    const ownerId = req.user.id;
+    const ownerId = req.userId;
 
     // 3. Basic validation
     if (!word || !sourceId || !sourceTitle) {
@@ -54,7 +54,7 @@ export const createVocabulary = async (req, res) => {
 export const getAllVocabularies = async (req, res) => {
   try {
     // 1. Get ownerId from the authenticated user
-    const ownerId = req.user.id;
+    const ownerId = req.userId;
 
     // 2. Check for query parameters (e.g., ?sourceId=...)
     const { sourceId } = req.query;
@@ -90,7 +90,7 @@ export const getAllVocabularies = async (req, res) => {
 export const getVocabularyById = async (req, res) => {
   try {
     const { vocabularyId } = req.params;
-    const ownerId = req.user.id;
+    const ownerId = req.userId;
 
     // 1. Check if the ID is a valid MongoDB ObjectId
     if (!mongoose.Types.ObjectId.isValid(vocabularyId)) {
@@ -126,7 +126,7 @@ export const getVocabularyById = async (req, res) => {
 export const updateVocabulary = async (req, res) => {
   try {
     const { vocabularyId } = req.params;
-    const ownerId = req.user.id;
+    const ownerId = req.userId;
     
     // 1. Check for valid ID
     if (!mongoose.Types.ObjectId.isValid(vocabularyId)) {
@@ -172,7 +172,7 @@ export const updateVocabulary = async (req, res) => {
 export const deleteVocabulary = async (req, res) => {
   try {
     const { vocabularyId } = req.params;
-    const ownerId = req.user.id;
+    const ownerId = req.userId;
 
     // 1. Check for valid ID
     if (!mongoose.Types.ObjectId.isValid(vocabularyId)) {
