@@ -1,7 +1,7 @@
 import express from 'express';
 import * as vocabularyController from "./controllers/vocabularyController.js";
 import * as sentenceController from "./controllers/sentenceController.js";
-import authMiddleware from './middlewares/auth';
+import authMiddleware from './middlewares/auth.js';
 
 const router = express.Router();
 

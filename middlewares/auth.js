@@ -1,4 +1,4 @@
-import jwtService from "../services/jwtService";
+import jwtService from "../services/jwtService.js";
 
 
 const authMiddleware = async (req, res, next) => {
