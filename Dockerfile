@@ -10,7 +10,6 @@ RUN npm install --production
 COPY . .
 # Expose the port your app runs on
 EXPOSE 3003
-# EXPOSE 8080 # when deploy it to gcp
 
 # Define the command to run
 CMD [ "npm", "start" ]

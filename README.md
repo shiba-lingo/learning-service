@@ -21,19 +21,32 @@ Follow these instructions to get a local copy up and running for development and
 2. **Set up environment variables:**
     Create a file named `.env` in the root of the project and add the following variables.
     ```.env
-    # The connection string for your MongoDB database
     MONGO_URL=mongodb://localhost:27017/your_db_name
-    DB_NAME=your_db_name
-    
-    # The port you want the server to run on
-    PORT=3000
+    JWT_SECRET=your_super_strong_secret_key_here
+    PORT=3003
     ```
 
 3. **Start the server:**
     ```sh
     npm start
     ```
-    The server should now be running and connected to MongoDB, accessible at `http://localhost:3000`.
+    The server should now be running and connected to MongoDB, accessible at `http://localhost:3003`.
+
+
+4. **Run Container:**
+
+   Create the docker container with:
+    ```bash
+    docker build -t shiba-learning:latest .
+    ```
+   Run container
+    ```bash
+    docker run -d -p 3003:3003 \
+    -e PORT=3003 \
+    -e MONGO_URL="your_actual_db_url" \
+    -e JWT_SECRET="jwt_secret" \
+    shiba-learning:latest
+    ```
 
 ## <caption> API Endpoints
 
