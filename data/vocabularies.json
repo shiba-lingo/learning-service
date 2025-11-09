@@ -1,82 +1,82 @@
 [
   {
     "word": "Ethics",
-    "note": "Key theme of the summit.",
-    "description": "Moral principles that govern a person's behavior or the conducting of an activity.",
+    "sentence": "Key theme of the summit.",
+    "definition": "Moral principles that govern a person's behavior or the conducting of an activity.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "word": "Pledge",
-    "note": "Action word from the headline.",
-    "description": "A solemn promise or undertaking.",
+    "sentence": "Action word from the headline.",
+    "definition": "A solemn promise or undertaking.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "word": "Autonomous",
-    "note": "e.g., autonomous vehicles/weapons",
-    "description": "Having the freedom to act independently.",
+    "sentence": "e.g., autonomous vehicles/weapons",
+    "definition": "Having the freedom to act independently.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "word": "Bias",
-    "note": "Big problem in AI training data.",
-    "description": "Prejudice in favor of or against one thing, person, or group compared with another.",
+    "sentence": "Big problem in AI training data.",
+    "definition": "Prejudice in favor of or against one thing, person, or group compared with another.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "word": "Regulation",
-    "note": "Governments are discussing this.",
-    "description": "A rule or directive made and maintained by an authority.",
+    "sentence": "Governments are discussing this.",
+    "definition": "A rule or directive made and maintained by an authority.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "word": "Algorithm",
-    "note": "The 'brain' of the AI.",
-    "description": "A process or set of rules to be followed in calculations or other problem-solving operations.",
+    "sentence": "The 'brain' of the AI.",
+    "definition": "A process or set of rules to be followed in calculations or other problem-solving operations.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "word": "Summit",
-    "note": "Context of the article (a meeting).",
-    "description": "A meeting between heads of government or other high-level officials.",
+    "sentence": "Context of the article (a meeting).",
+    "definition": "A meeting between heads of government or other high-level officials.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "word": "Oversight",
-    "note": "Related to 'regulation'.",
-    "description": "The action of overseeing something; regulatory supervision.",
+    "sentence": "Related to 'regulation'.",
+    "definition": "The action of overseeing something; regulatory supervision.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "word": "Stakeholder",
-    "note": "Includes companies, govt, and public.",
-    "description": "A person with an interest or concern in something, especially a business.",
+    "sentence": "Includes companies, govt, and public.",
+    "definition": "A person with an interest or concern in something, especially a business.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "word": "Transparency",
-    "note": "Opposite of a 'black box' AI.",
-    "description": "The condition of being easy to perceive or understand; in this context, how an AI makes decisions.",
+    "sentence": "Opposite of a 'black box' AI.",
+    "definition": "The condition of being easy to perceive or understand; in this context, how an AI makes decisions.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   }
 ]

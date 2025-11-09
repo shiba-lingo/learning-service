@@ -9,22 +9,22 @@ import mongoose from 'mongoose';
 export const createSentence = async (req, res) => {
   try {
     // 1. Get data from the request body
-    const { sentence, note, sourceId, sourceTitle } = req.body;
+    const { sentence, context, articleId, articleTitle } = req.body;
     
     // 2. Get the ownerId from the authenticated user
     const ownerId = req.userId;
 
     // 3. Basic validation
-    if (!sentence || !sourceId || !sourceTitle) {
-      return res.status(400).json({ message: 'Missing required fields: sentence, sourceId, sourceTitle' });
+    if (!sentence || !articleId || !articleTitle) {
+      return res.status(400).json({ message: 'Missing required fields: sentence, articleId, articleTitle' });
     }
 
     // 4. Create a new sentence instance
     const newSentence = new Sentence({
       sentence,
-      note,
-      sourceId,
-      sourceTitle,
+      context,
+      articleId,
+      articleTitle,
       ownerId: ownerId, // Set the owner
     });
 
@@ -54,17 +54,17 @@ export const getAllSentences = async (req, res) => {
     const ownerId = req.userId;
 
     // 2. Check for query parameters
-    const { sourceId } = req.query;
+    const { articleId } = req.query;
 
     // 3. Build the query object
     const query = { ownerId: ownerId };
 
-    // 4. Add sourceId to filter if provided
-    if (sourceId) {
-      if (!mongoose.Types.ObjectId.isValid(sourceId)) {
-        return res.status(400).json({ message: 'Invalid sourceId format' });
+    // 4. Add articleId to filter if provided
+    if (articleId) {
+      if (!mongoose.Types.ObjectId.isValid(articleId)) {
+        return res.status(400).json({ message: 'Invalid articleId format' });
       }
-      query.sourceId = sourceId;
+      query.articleId = articleId;
     }
 
     // 5. Find all sentences matching the query

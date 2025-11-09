@@ -12,11 +12,11 @@ const vocabularySchema = new mongoose.Schema(
       required: true,
       trim: true, // Automatically remove whitespace from start/end
     },
-    note: {
+    definition: {
       type: String,
       trim: true,
     },
-    description: {
+    sentence: {
       type: String,
       trim: true,
     },
@@ -26,13 +26,13 @@ const vocabularySchema = new mongoose.Schema(
       required: true,
       index: true, // Key: Creates an index for fast lookups by ownerId
     },
-    sourceId: {
+    articleId: {
       type: Schema.Types.ObjectId,
       ref: "SourceArticle", // Key: Creates a relationship to your 'SourceArticle' model
       required: true,
-      index: true, // Key: Creates an index for fast filtering by sourceId
+      index: true, // Key: Creates an index for fast filtering by articleId
     },
-    sourceTitle: {
+    articleTitle: {
       type: String,
       required: true,
     },

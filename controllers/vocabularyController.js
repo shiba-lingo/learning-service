@@ -10,23 +10,23 @@ import mongoose from 'mongoose';
 export const createVocabulary = async (req, res) => {
   try {
     // 1. Get data from the request body
-    const { word, note, description, sourceId, sourceTitle } = req.body;
+    const { word, sentence, definition, articleId, articleTitle } = req.body;
     
     // 2. Get the ownerId from the authenticated user (attached by auth middleware)
     const ownerId = req.userId;
 
     // 3. Basic validation
-    if (!word || !sourceId || !sourceTitle) {
-      return res.status(400).json({ message: 'Missing required fields: word, sourceId, sourceTitle' });
+    if (!word || !articleId || !articleTitle) {
+      return res.status(400).json({ message: 'Missing required fields: word, articleId, articleTitle' });
     }
 
     // 4. Create a new vocabulary instance
     const vocabulary = new Vocabulary({
       word,
-      note,
-      description,
-      sourceId,
-      sourceTitle,
+      sentence,
+      definition,
+      articleId,
+      articleTitle,
       ownerId: ownerId, // Set the owner
     });
 
@@ -56,19 +56,19 @@ export const getAllVocabularies = async (req, res) => {
     // 1. Get ownerId from the authenticated user
     const ownerId = req.userId;
 
-    // 2. Check for query parameters (e.g., ?sourceId=...)
-    const { sourceId } = req.query;
+    // 2. Check for query parameters (e.g., ?articleId=...)
+    const { articleId } = req.query;
 
     // 3. Build the query object, starting with the mandatory ownerId
     const query = { ownerId: ownerId };
 
-    // 4. If a sourceId is provided in the query, add it to the filter
-    if (sourceId) {
-      // You should validate sourceId if it's supposed to be an ObjectId
-      if (!mongoose.Types.ObjectId.isValid(sourceId)) {
-        return res.status(400).json({ message: 'Invalid sourceId format' });
+    // 4. If a articleId is provided in the query, add it to the filter
+    if (articleId) {
+      // You should validate articleId if it's supposed to be an ObjectId
+      if (!mongoose.Types.ObjectId.isValid(articleId)) {
+        return res.status(400).json({ message: 'Invalid articleId format' });
       }
-      query.sourceId = sourceId;
+      query.articleId = articleId;
     }
 
     // 5. Find all vocabularies matching the query, sorted by most recent

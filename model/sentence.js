@@ -11,7 +11,7 @@ const sentenceSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
-    note: {
+    context: {
       type: String,
       trim: true,
     },
@@ -21,13 +21,13 @@ const sentenceSchema = new mongoose.Schema(
       required: true,
       index: true, // Index for fast queries by user
     },
-    sourceId: {
+    articleId: {
       type: Schema.Types.ObjectId,
       ref: "SourceArticle", // Relationship to the 'SourceArticle' model
       required: true,
       index: true, // Index for fast queries by source
     },
-    sourceTitle: {
+    articleTitle: {
       type: String,
       required: true,
     },

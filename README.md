@@ -55,9 +55,9 @@ prefixed with `/vocabularies`.
 | Method | Endpoint | Description | Request Body/Query Params |
 | :--- | :--- | :--- | :--- |
 | `POST` | `/` | Creates a new vocabulary entry for the authenticated user. | **Body:** (See Vocabulary Schema) |
-| `GET` | `/` | Gets all vocabulary entries for the authenticated user. | **Query Params (Optional):** <br> `?sourceId=...`|
+| `GET` | `/` | Gets all vocabulary entries for the authenticated user. | **Query Params (Optional):** <br> `?articleId=...`|
 | `GET` | `/:id` | Gets a single vocabulary entry by its ID. | |
-| `PUT` | `/:id` | Updates a vocabulary entry by its ID. | **Body:** `{ "note": "New Note", ... }` |
+| `PUT` | `/:id` | Updates a vocabulary entry by its ID. | **Body:** `{ "definition": "New definition", ... }` |
 | `DELETE` | `/:id` | Deletes a vocabulary entry by its ID. | |
 
 prefixed with `/sentences`.
@@ -65,9 +65,9 @@ prefixed with `/sentences`.
 | Method | Endpoint | Description | Request Body/Query Params |
 | :--- | :--- | :--- | :--- |
 | `POST` | `/` | Creates a new sentence entry for the authenticated user. | **Body:** (See sentence Schema) |
-| `GET` | `/` | Gets all sentence entries for the authenticated user. | **Query Params (Optional):** <br> `?sourceId=...`|
+| `GET` | `/` | Gets all sentence entries for the authenticated user. | **Query Params (Optional):** <br> `?articleId=...`|
 | `GET` | `/:id` | Gets a single sentence entry by its ID. | |
-| `PUT` | `/:id` | Updates a sentence entry by its ID. | **Body:** `{ "note": "New Note", ... }` |
+| `PUT` | `/:id` | Updates a sentence entry by its ID. | **Body:** `{ "context": "New context", ... }` |
 | `DELETE` | `/:id` | Deletes a sentence entry by its ID. | |
 ---
 
@@ -78,10 +78,10 @@ This is the main data model for vocabularies stored in the `vocabularies` collec
 * **word**
     * Type: `String`
     * Required: Yes
-* **note**
+* **sentence**
     * Type: `String`
     * Required: No
-* **description**
+* **definition**
     * Type: `String`
     * Required: No
 * **source\_id**
@@ -103,7 +103,7 @@ This is the main data model for sentences stored in the `sentences` collection.
 * **sentence**
     * Type: `String`
     * Required: Yes
-* **note**
+* **context**
     * Type: `String`
     * Required: No
 * **source\_id**

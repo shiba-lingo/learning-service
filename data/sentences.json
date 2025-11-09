@@ -1,72 +1,72 @@
 [
   {
     "sentence": "The new guidelines are meant to provide regulatory oversight for autonomous systems.",
-    "note": "Connects 'oversight' and 'autonomous'.",
+    "context": "Connects 'oversight' and 'autonomous'.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "sentence": "All stakeholders agreed that algorithmic transparency is a non-negotiable goal.",
-    "note": "Uses 'stakeholder' and 'transparency'.",
+    "context": "Uses 'stakeholder' and 'transparency'.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "sentence": "Leaders at the summit pledged to address the issue of inherent bias in machine learning models.",
-    "note": "Uses 'summit', 'pledged', 'bias'.",
+    "context": "Uses 'summit', 'pledged', 'bias'.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "sentence": "A key ethical question is who is responsible when an autonomous vehicle makes a mistake.",
-    "note": "Good example of 'ethical'.",
+    "context": "Good example of 'ethical'.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "sentence": "It is difficult to apply old regulations to a rapidly evolving technology.",
-    "note": "Uses 'regulation'.",
+    "context": "Uses 'regulation'.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "sentence": "The company's algorithm determines news feed content, which has led to concerns about bias.",
-    "note": "Connects 'algorithm' and 'bias'.",
+    "context": "Connects 'algorithm' and 'bias'.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "sentence": "The ethics of artificial intelligence was the central topic of discussion.",
-    "note": "Uses 'ethics'.",
+    "context": "Uses 'ethics'.",
     "ownerId": "6690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "sentence": "Without proper oversight, the technology could develop in unintended ways.",
-    "note": "Uses 'oversight'.",
+    "context": "Uses 'oversight'.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "sentence": "The public is a key stakeholder in the debate over AI regulation.",
-    "note": "Uses 'stakeholder' and 'regulation'.",
+    "context": "Uses 'stakeholder' and 'regulation'.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   },
   {
     "sentence": "They are calling for more transparency in how these complex algorithms are built and deployed.",
-    "note": "Uses 'transparency' and 'algorithm'.",
+    "context": "Uses 'transparency' and 'algorithm'.",
     "ownerId": "690943e21746560661fb88eb",
-    "sourceId": "6909137e0e13931001724fec",
-    "sourceTitle": "Global AI Summit Pledges New Ethics Guidelines"
+    "articleId": "6909137e0e13931001724fec",
+    "articleTitle": "Global AI Summit Pledges New Ethics Guidelines"
   }
 ]
