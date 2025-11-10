@@ -48,6 +48,8 @@ Follow these instructions to get a local copy up and running for development and
     shiba-learning:latest
     ```
 
+- Swagger API endpoints: `/api-doc`.
+
 ## <caption> API Endpoints
 
 prefixed with `/vocabularies`.
