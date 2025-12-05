@@ -41,11 +41,7 @@ Follow these instructions to get a local copy up and running for development and
     ```
    Run container
     ```bash
-    docker run -d -p 3003:3003 \
-    -e PORT=3003 \
-    -e MONGO_URL="your_actual_db_url" \
-    -e JWT_SECRET="jwt_secret" \
-    shiba-learning:latest
+    docker run -p 3003:3003 --env-file ./.env shiba-learning
     ```
 
 - Swagger API endpoints: `/api-doc`.
