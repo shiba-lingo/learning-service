@@ -21,6 +21,14 @@ mongoose.connect(MONGO_URL)
     .then(() => console.log('Successfully connected to MongoDB!'))
     .catch(err => console.error('MongoDB connection error:', err));
 
+app.get('/health', (req, res) => {
+    res.status(200).json({
+        success: true,
+        message: 'Shiba-Learning is healthy 🐶',
+        timestamp: new Date().toISOString()
+    });
+});
+
 app.use('/', routes);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
