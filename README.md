@@ -34,19 +34,31 @@ Follow these instructions to get a local copy up and running for development and
 
 
 4. **Run Container:**
+    -  **Option 1: Run container on local**
+       Modify the Dockerfile to `EXPOSE 3003`, and create the docker container with:
+       ```bash
+       docker build -t shiba-learning:latest .
+       ```
+       Run container:
+        ```bash
+        docker run -p 3003:3003 --env-file ./.env shiba-learning:latest
+        ```
+    - **Option 2: Run with k8s**
+      Modify the Dockerfile to `EXPOSE 8080`, and create the docker container with:
+      ```bash
+      # depoly with minikube
+       docker build -t shiba-learning:latest .
+      
+      # depoly with GKE
+      docker buildx build --platform linux/amd64 -t us-central1-docker.pkg.dev/tcss559-au25-chaoyuuu/tcss559/shiba-learning:latest .
+      ```
+      Run k8s (see the README.md in k8s folder)
 
-   Create the docker container with:
-    ```bash
-    docker build -t shiba-learning:latest .
-    ```
-   Run container
-    ```bash
-    docker run -p 3003:3003 --env-file ./.env shiba-learning
-    ```
 
-- Swagger API endpoints: `/api-doc`.
 
 ## <caption> API Endpoints
+
+> Swagger API endpoints: `/api-doc`.
 
 prefixed with `/vocabularies`.
 

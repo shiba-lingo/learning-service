@@ -28,9 +28,9 @@ COPY --from=builder /usr/src/app/node_modules ./node_modules
 COPY . .
 
 # Expose the port the application listens on (assuming standard Node port 3000)
-#ENV PORT=8080
-#EXPOSE 8080
-EXPOSE 3003
+ENV PORT=8080
+EXPOSE 8080
+#EXPOSE 3003
 
 # Define the command to run the application
 CMD [ "npm", "start" ]
